@@ -7,7 +7,7 @@ form fieldset + fieldset {
 }
 
 form fieldset legend {
-    color: var(--color-card-title);
+    color: var(--color-title);
 
     font-family: IBM Plex Sans;
     font-weight: 600;
@@ -37,7 +37,7 @@ label {
 
     font-family: IBM Plex Sans;
     font-weight: 500;
-    color: #787880;
+    color: var(--color-title);
 
     margin-bottom: 1rem;
 }

@@ -14,3 +14,4 @@ for (let card of cards) {
         deleteForm.setAttribute("action", "/job/delete/" + cardId);
     };
 }
+

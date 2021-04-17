@@ -4,9 +4,9 @@
 
 aside.card {
     background: var(--color-card-background);
-    color: var(--color-card-title);
+    color: var(--color-title);
 
-    border: 1px solid #e1e3e6;
+    border: 1px solid var(--color-border);
     border-radius: 0.313rem;
 
     width: 22rem;
@@ -14,7 +14,6 @@ aside.card {
     margin-right: 8rem;
 
     text-align: center;
-
     padding: 3.875rem 4.625rem;
 }
 
@@ -51,27 +50,49 @@ main {
     flex: 1;
 }
 
+#monthly-budget {
+    appearance: none;
+}
+
 .theme-container {
     margin-top: 2.5rem;
+    padding: 1.5rem 0.5rem 0;
     width: 100%;
-    height: 3.5rem;
-    border-top: 1px solid #e1e3e6;
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.theme-container div:not(:last-child) {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.theme-container div:not(:first-child) {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.theme-container div:not(:first-child) span.active {
+    opacity: 0.5;
 }
 
 .theme-container input[type=checkbox]{
     height: 0;
     width: 0;
     visibility: hidden;
+    display: none;
 }
 
 .theme-container label {
-    margin: 0;
+    margin: 0 1rem;
     cursor: pointer;
     text-indent: -9999px;
-    width: 52px;
+    width: 55px;
     height: 27px;
     background: var(--color-card-label);
     border-radius: 100px;
